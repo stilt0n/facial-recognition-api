@@ -3,7 +3,7 @@ const Clarifai = require('clarifai');
 const FACE_MODEL = "a403429f2ddf4b49b307e318f00e528b";
 //the face model id for Clarifai
 const clApp = new Clarifai.App({
-  apiKey: '01caa341e4814061a6e7183be682c4cd'
+  apiKey: process.env.API_KEY
 });
 
 const handleApiCall = (req, res) => {
